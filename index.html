@@ -20,8 +20,32 @@
      <!--<button type="button" onclick="document.getElementById('first').innerHTML='Hello Everyone, Welcome to Devtown!!'">
         Click here!!
         </button>-->
-
+        
+     <script>   
+class Car {
+    constructor(brand) {
+        this.carname = brand;
+    }
+        present(){
+            return 'I have a' + this.carname;
+        }
+    }
+    class Model extends Car{
+        constructor(brand, mod) {
+            super(brand);
+            this.model =mod
+            }
+            show()
+                {
+                return this.present() + ', it isa ' +
+                    this.model;
+        }
+    }
+        mycar = new Model("Ford", "Mustang");
+        document.getElementById("first").innerHTML = mycar.show()
+</script>
     <script src="index.js"> 
     </script>
 </body>
 </html>
+<!--shapes -> square, -> triangle (color)-->
