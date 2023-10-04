@@ -104,3 +104,32 @@
 //let c = a % b;
 //document.write(c)
 
+//function myExample(some){
+//    document.getElementById("first").innerHTML = some
+//}
+
+//function myFirst() {
+//    myExample("Hello First")
+//}
+
+//function mySecond() { 
+//    myExample("Hello Second")
+//}
+
+
+//mySecond();
+//myFirst();
+
+//function myExample(some){
+//  document.getElementById("first").innerHTML = some
+//}
+
+//function myCalculator(num1, num2, myCallback) {
+//    let sum = num1 + num2;
+//    myCallback (sum);
+//}
+//myCalculator(23, 32, myExample);
+setTimeout(myFunction, 3000);
+function myFunction() {
+    document.write("Hey Hi Everyone, Welcome to Devtown")
+}
