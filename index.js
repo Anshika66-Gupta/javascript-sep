@@ -69,11 +69,67 @@
 //document.getElementById('first').innerHTML = fullName();
 
 
-const people = ["Anshika", "Pratim", "Akul"];
-document.getElementById('first').innerHTML = people
-function myExample() {
-    people.push("Pavan");
-}
-//let size = people.length;
+//const people = ["Anshika", "Pratim", "Akul"];
+//document.getElementById('first').innerHTML = people
+//function myExample() {
+//    people.push("Pavan");
+//}
+////let size = people.length;
 
-document.getElementById('first').innerHTML = people;
+//document.getElementById('first').innerHTML = people;
+
+
+//let length = 30.2;
+//let weight = 12.23;
+ 
+//document.write(length * weight)
+
+
+//let firstName = "Anshika";
+//let lastName = "Gupta";
+
+//document.write(firstName + " " + lastName)
+
+//let x = true;
+//let y = false;
+//document.write(typeof x);
+
+
+//let z = BigInt("12345678901234567890123456789901234567890")
+//document.write(z)
+
+
+//let a = 10
+//let b = 20
+//let c = a % b;
+//document.write(c)
+
+//function myExample(some){
+//    document.getElementById("first").innerHTML = some
+//}
+
+//function myFirst() {
+//    myExample("Hello First")
+//}
+
+//function mySecond() { 
+//    myExample("Hello Second")
+//}
+
+
+//mySecond();
+//myFirst();
+
+//function myExample(some){
+//  document.getElementById("first").innerHTML = some
+//}
+
+//function myCalculator(num1, num2, myCallback) {
+//    let sum = num1 + num2;
+//    myCallback (sum);
+//}
+//myCalculator(23, 32, myExample);
+setTimeout(myFunction, 3000);
+function myFunction() {
+    document.write("Hey Hi Everyone, Welcome to Devtown")
+}
