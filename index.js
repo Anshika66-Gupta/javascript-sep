@@ -129,7 +129,50 @@
 //    myCallback (sum);
 //}
 //myCalculator(23, 32, myExample);
-setTimeout(myFunction, 3000);
-function myFunction() {
-    document.write("Hey Hi Everyone, Welcome to Devtown")
+//setTimeout(myFunction, 3000);
+//function myFunction() {
+//    document.write("Hey Hi Everyone, Welcome to Devtown")
+//}
+
+
+//let myPromise = new Promise(function (myResolve, myReject) {
+//    //producing code section
+     
+//    myResolve() //successful
+//    myReject() // rejection
+//})
+
+//// consuming code section 
+
+//myPromise.then(
+//    function (value) {
+//        // if code is successful
+//    },
+//    function (error) {
+//       // if code is rejected
+//    }
+        
+//);
+
+function myExample(some) { 
+    document.getElementById("first").innerHTML = some
 }
+let myPromise = new Promise(function (myResolve, myReject) { 
+    let x = 0;
+    if (x == 3) {
+        myResolve("Okay !!")
+    } else {
+        myReject("Error")
+    }
+})
+
+myPromise.then(
+    function (value) {
+        myExample(value);
+    },
+    function (error) {
+        myExample(error);
+    }
+)
+
+
