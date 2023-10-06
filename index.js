@@ -154,25 +154,158 @@
         
 //);
 
-function myExample(some) { 
-    document.getElementById("first").innerHTML = some
-}
-let myPromise = new Promise(function (myResolve, myReject) { 
-    let x = 0;
-    if (x == 3) {
-        myResolve("Okay !!")
-    } else {
-        myReject("Error")
-    }
-})
+//function myExample(some) { 
+//    document.getElementById("first").innerHTML = some
+//}
+//let myPromise = new Promise(function (myResolve, myReject) { 
+//    let x = 0;
+//    if (x == 3) {
+//        myResolve("Okay !!")
+//    } else {
+//        myReject("Error")
+//    }
+//})
 
-myPromise.then(
-    function (value) {
-        myExample(value);
-    },
-    function (error) {
-        myExample(error);
-    }
-)
+//myPromise.then(
+//    function (value) {
+//        myExample(value);
+//    },
+//    function (error) {
+//        myExample(error);
+//    }
+//myPromise.then(
+    //    function (value) {
+    //        myExample(value);
+    //    },
+    //    function (error) {
+    //        myExample(error);
+    //    }
+    //)
+//)
+
+//Hardik 
+//var str = new String( "Hardik" );
+//var len=str.length;
+//var age=19;
+//var x = Number(prompt("Enter a Value",0));
+//var y = Number(prompt("Enter a Value", 0));
+
+//function myExample(some) { 
+//    document.getElementById("first").innerHTML = some
+//}
+//let myPromise = new Promise(function (myResolve, myReject) { 
+//    if (x+y == age+len) {
+//        myResolve("Hello World")
+//    } else {
+//        myReject("Bye")
+//    }
+//})
+
+//
+//Yash 
+//let ans = document.getElementById('demo');
+
+//function calculate()
+//{
+//    let demo = new Promise(
+//        function (resolve, reject)
+//        {
+//            try
+//            {
+//                let username = prompt("Enter your name: ");
+//                let age = parseInt(prompt("Enter your age: "));
+//                let x = parseInt(prompt("Enter a number: "));
+//                let y = parseInt(prompt("Enter a number: "));
+//                let res = age + username.length;
+//                resolve(res > (x+y));
+//            }
+//            catch(error)
+//            {
+//                reject(error);
+//            }
+//        }
+//    );
+//    demo.then(check, display);
+//}
+
+//calculate();
+
+//function check(a)
+//{
+//    console.log(a);
+//    if(a)
+//        display('Hello, World!');
+//    else
+//        display('Bye!');
+//}
+
+//function display(x)
+//{
+//    ans.innerHTML = x;
+//}
+
+//Krishti 
+//function myExample(some) { 
+//    document.getElementById("first").innerHTML = some
+//}
+//let myPromise = new Promise(function (myResolve, myReject) { 
+//    let x = 19;
+//    let y = "Krishti";
+//    if (x == 19 && y == "Krishti") {
+//        myResolve("Hello World !!")
+//    } else {
+//        myReject(" Bye !!")
+//    }
+//})
+
+//myPromise.then(
+//    function (value) {
+//        myExample(value);
+//    },
+//    function (error) {
+//        myExample(error);
+//    }
+//)
 
 
+//Rimi 
+//function myExample(some) {
+//        document.getElementById("first").innerHTML = some;
+//      }
+//     
+//      const myPromise = new Promise(function (myResolve, myReject) {
+//        const name = "Rimi";
+//        const x = 5;
+//        const y = 10;
+//        const age = 20;
+//     
+//        if (name.length + age < x + y) {
+//          myReject("Bye!");
+//        } else if (name.length + age > x + y) {
+//          myResolve("Hello, world!");
+//        } else {
+//          myResolve("Error");
+//        }
+//      });
+//     
+//      myPromise
+//        .then(function (value) {
+//          myExample(value);
+//        })
+//        .catch(function (error) {
+//          myExample(error);
+//        });
+
+
+async function myExample() {
+    let myPromise = new Promise(function (resolve) {
+        setTimeout(function () { 
+            {
+                resolve("I am teaching a Devtown Batch");
+            }
+        },5000)
+    })
+    document.getElementById("first").innerHTML = await  myPromise
+};
+
+myExample();
